@@ -18,17 +18,35 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Emanvidmaker's blog
-email: your-email@example.com
+title: Eman's blog
+email: emanvidmaker+site at gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+google_analytics: ""
+#SOCIALS
 twitter_username: emanvidmaker
 github_username:  emanvidmaker
+instagram_username: emanvidmaker.pr
+linkedin_username: emanuel-acosta-gonzalez
+#pinterest_username: emanvidmaker
+youtube_username: emanvidmaker
+mastodon:
+  -
+    GameDevPlace:
+      username: emanvidmaker
+      instance: emanvidmaker
+rss: RSS
+
+
+header_pages:
+  - pages/about.md
+  - pages/links.html
+
+
+  
 show_downloads: false
 
 # Build settings
@@ -37,6 +55,20 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+defaults:
+  -
+    scope:
+      path: "_post"
+      type : "post"
+    values:
+      title: "Untitled"
+  -
+    scope:
+      path: "pages/"
+    values:
+      layout: default
+      title: "Untitled"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
