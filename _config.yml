@@ -44,6 +44,7 @@ rss: RSS
 header_pages:
   - pages/about.md
   - pages/links.html
+  - pages/test.md
 
 
   
@@ -59,9 +60,10 @@ plugins:
 defaults:
   -
     scope:
-      path: "_post"
-      type : "post"
+      path: "_posts/"
     values:
+      layout: post
+      author: "Emanuel Acosta Gonzalez"
       title: "Untitled"
   -
     scope:

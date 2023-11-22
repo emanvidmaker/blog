@@ -2,8 +2,8 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  border-top: 5px solid $dark-grey;
+  border-bottom: 1px solid $light-grey;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -20,7 +20,7 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $dark-grey;
   }
 }
 
@@ -49,9 +49,9 @@
   @include media-query($on-palm) {
     position: absolute;
     top: 9px;
-    right: $spacing-unit / 2;
+    right: calc($spacing-unit / 2);
     background-color: $background-color;
-    border: 1px solid $grey-color-light;
+    border: 1px solid $light-grey;
     border-radius: 5px;
     text-align: right;
 
@@ -74,7 +74,7 @@
       text-align: center;
 
       > svg {
-        fill: $grey-color-dark;
+        fill: $dark-grey;
       }
     }
 
@@ -106,13 +106,13 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 1px solid $light-grey;
   padding: $spacing-unit 0;
 }
 
 .footer-heading {
   @include relative-font-size(1.125);
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc($spacing-unit / 2);
 }
 
 .contact-list,
@@ -123,15 +123,15 @@
 
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
-  color: $grey-color;
-  margin-left: -$spacing-unit / 2;
+  color: $grey;
+  margin-left: calc(calc(0px - $spacing-unit) / 2);
   @extend %clearfix;
 }
 
 .footer-col {
   float: left;
-  margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+  margin-bottom: calc($spacing-unit / 2);
+  padding-left: calc($spacing-unit / 2);
 }
 
 .footer-col-1 {
@@ -199,7 +199,7 @@
 
 .post-meta {
   font-size: $small-font-size;
-  color: $grey-color;
+  color: $grey;
 }
 
 .post-link {
